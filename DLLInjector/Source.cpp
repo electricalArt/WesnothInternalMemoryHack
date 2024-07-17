@@ -88,8 +88,12 @@ void WaitThread(HANDLE hThread) {
 }
 
 int main(int argc, char** argv) {
-    const wchar_t* szcGameName = L"wesnoth.exe";
-    const char* szcDllPath = "C:\\Users\\musli\\ArtHome\\Projects\\GameCheats\\Wesnoth\\WesnothInternalMemoryHack\\Debug\\WesnothInternalMemoryHack.dll";
+    const wchar_t* szcGameName =
+        L"wesnoth.exe";
+        //L"tanksblitz.exe";
+        //L"notepad.exe";
+    const char* szcDllPath =
+        "C:\\Users\\musli\\ArtHome\\Projects\\GameCheats\\Wesnoth\\WesnothInternalMemoryHack\\Debug\\WesnothInternalMemoryHack.dll";
 
     HANDLE hProcess = GetProcessHandle(szcGameName);
     LPVOID lpProcessSzcDllPath = WriteHackDllToProcess(hProcess, szcDllPath);
@@ -104,7 +108,7 @@ int main(int argc, char** argv) {
     CloseHandle(hThread);
     CloseHandle(hProcess);
 
-    getchar();
+    //getchar();
 
     return 0;
 }
