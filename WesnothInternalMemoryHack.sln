@@ -10,6 +10,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DLLInjector", "DLLInjector\
 		{02064118-C154-4198-84F0-C58CA46BFD3B} = {02064118-C154-4198-84F0-C58CA46BFD3B}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ED2A2B4A-1205-4960-A9F5-287E582537A4}"
+	ProjectSection(SolutionItems) = preProject
+		WesnothCreateGame.ahk = WesnothCreateGame.ahk
+		WesnothCreateGame.exe = WesnothCreateGame.exe
+		WesnothCreateGame.pmc = WesnothCreateGame.pmc
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
