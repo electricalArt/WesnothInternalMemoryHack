@@ -46,6 +46,8 @@ BOOL WINAPI DllMain(
         LogMessage("[System.DateTime]::Now");
         LogMessage("'_Start_'");
 
+        MessageBox(0, 0, 0, 0);
+
         HANDLE hThread = CreateThread(
             NULL,
             0,
